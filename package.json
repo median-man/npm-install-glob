@@ -1,0 +1,44 @@
+{
+  "name": "node-package-template",
+  "version": "1.0.0",
+  "description": "An opinionated boilerplate for getting your node projects started.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "pretest": "npm run lint && npm run format:check",
+    "test": "jest",
+    "test:w": "jest --watch",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix . && npm run format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/median-man/node-package-template.git"
+  },
+  "keywords": [
+    "template",
+    "boilerplate"
+  ],
+  "author": "John Desrosiers <john.desro@gmail.com> (https://github.com/median-man)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/median-man/node-package-template/issues"
+  },
+  "homepage": "https://github.com/median-man/node-package-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/eslint-parser": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
