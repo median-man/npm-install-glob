@@ -1,44 +1,20 @@
 {
-  "name": "node-package-template",
+  "name": "npm-install-glob",
   "version": "1.0.0",
-  "description": "An opinionated boilerplate for getting your node projects started.",
+  "description": "Command-line tool to recursively run `npm install` using a glob pattern to match files. Ignores node_modules.",
   "main": "index.js",
-  "engines": {
-    "node": ">=12"
-  },
   "scripts": {
-    "pretest": "npm run lint && npm run format:check",
-    "test": "jest",
-    "test:w": "jest --watch",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix . && npm run format"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/median-man/node-package-template.git"
+    "url": "git+https://github.com/median-man/npm-install-glob.git"
   },
-  "keywords": [
-    "template",
-    "boilerplate"
-  ],
+  "keywords": [],
   "author": "John Desrosiers <john.desro@gmail.com> (https://github.com/median-man)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/median-man/node-package-template/issues"
+    "url": "https://github.com/median-man/npm-install-glob/issues"
   },
-  "homepage": "https://github.com/median-man/node-package-template#readme",
-  "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/eslint-parser": "^7.14.7",
-    "@babel/preset-env": "^7.14.8",
-    "eslint": "^7.30.0",
-    "eslint-config-prettier": "^8.3.0",
-    "jest": "^27.0.6",
-    "prettier": "^2.3.2"
-  },
-  "jest": {
-    "transform": {}
-  }
+  "homepage": "https://github.com/median-man/npm-install-glob#readme"
 }
