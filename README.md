@@ -1,17 +1,15 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Node Package Template
+# npm install glob
 
-An opinionated boilerplate for getting your node projects started.
+Command to recursively run `npm install` using a glob pattern to match files. Ignores node_modules.
 
 [Report a bug or request a feature][issues-url]
 
 ## About The Project
 
-There are many templates for Node/Express and other frameworks, but not ones that suited my preferences for building packages and command line tools. Tired of spending in upwards of 30 minutes to an hour setting up my preferred tooling, I decided it was time to create and share my starter template for node projects.
-
-This repo contains an opinionated setup for developing Node applications including linting, testing, and other tooling with the goal of allowing a developer to quickly get past setup and get to work creating Node apps.
+I teach a full-stack coding bootcamp and I'm constantly needing to install node_modules in numerous folders. I wanted a script that I can run to recursively install node_modules using a glob pattern to match the root directory/ies. This script will do just that. The script will match all folders against a pattern argument (glob notation) and recursively run `npm install` in any folder containing a `package.json` file ignoring any `node_modules` directories.
 
 ### Built With
 
@@ -29,9 +27,7 @@ Requires Node v12+ and npm v7+.
 
 ### Installation
 
-1. Make a fork or [generate a new repository from this template](https://github.com/median-man/mern-jwt-boilerplate/generate).
-
-2. Install dependencies: `npm install`.
+Run `npm install`.
 
 ### Linting and Code Style
 
@@ -73,7 +69,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 John Desrosiers - <john.desro@gmail.com>
 
-Project Link: <https://github.com/median-man/node-package-template>
+Project Link: <https://github.com/median-man/npm-install-glob>
 
 ## Acknowledgements
 
@@ -85,11 +81,11 @@ Project Link: <https://github.com/median-man/node-package-template>
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [Setting up ESLint to work with new or proposed JavaScript features by George Griffiths](https://griffa.dev/posts/setting-up-eslint-to-work-with-new-or-proposed-javascript-features-such-as-private-class-fields./)
 
-[contributors-url]: https://github.com/median-man/node-package-template/graphs/contributors
+[contributors-url]: https://github.com/median-man/npm-install-glob/graphs/contributors
 [eslint]: https://eslint.org/
-[issues-shield]: https://img.shields.io/github/issues/median-man/node-package-template.svg?style=for-the-badge
-[issues-url]: https://github.com/median-man/node-package-template/issues
+[issues-shield]: https://img.shields.io/github/issues/median-man/npm-install-glob.svg?style=for-the-badge
+[issues-url]: https://github.com/median-man/npm-install-glob/issues
 [jest]: https://jestjs.io/
-[license-shield]: https://img.shields.io/github/license/median-man/node-package-template.svg?style=for-the-badge
-[license-url]: https://github.com/median-man/node-package-template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/median-man/npm-install-glob.svg?style=for-the-badge
+[license-url]: https://github.com/median-man/npm-install-glob/blob/master/LICENSE.txt
 [prettier]: https://prettier.io/
