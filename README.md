@@ -26,7 +26,7 @@ Requires Node v12+ and npm v7+.
 
 ### Installation
 
-Run `npm install -g`.
+Run `npm install -g npm-install-glob`.
 
 ## Usage
 
