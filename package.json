@@ -1,11 +1,12 @@
 {
   "name": "npm-install-glob",
   "version": "1.0.0",
-  "description": "Command-line tool to recursively run `npm install` using a glob pattern to match files. Ignores node_modules.",
+  "description": "CLI tool to run `npm install` using a glob pattern to match folders containing a package.json file.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/median-man/npm-install-glob.git"
