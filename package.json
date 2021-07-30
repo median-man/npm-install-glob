@@ -1,6 +1,6 @@
 {
   "name": "npm-install-glob",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to run `npm install` using a glob pattern to match folders containing a package.json file.",
   "main": "index.js",
   "scripts": {
